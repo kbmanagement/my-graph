@@ -92,7 +92,6 @@ def process_fb_response(friends, mutual_friends, graph):
         source_friend = friends[index]
         source_id = js_id_dict[source_friend['id']]
         mf_body = json.loads(mf['body'])
-        print "START",source_friend, mf_body
         mf_data = mf_body['data']
         #import ipdb; ipdb.set_trace()
         if mf_data:
